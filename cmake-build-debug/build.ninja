@@ -52,51 +52,79 @@ build cmake_object_order_depends_target_Day2: phony || CMakeFiles/Day2.dir
 build CMakeFiles/Day2.dir/main.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/main.c || cmake_object_order_depends_target_Day2
   DEP_FILE = CMakeFiles/Day2.dir/main.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3"
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
   OBJECT_DIR = CMakeFiles/Day2.dir
   OBJECT_FILE_DIR = CMakeFiles/Day2.dir
 
 build CMakeFiles/Day2.dir/day2/swap_two_numbers.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day2/swap_two_numbers.c || cmake_object_order_depends_target_Day2
   DEP_FILE = CMakeFiles/Day2.dir/day2/swap_two_numbers.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3"
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
   OBJECT_DIR = CMakeFiles/Day2.dir
   OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day2
 
 build CMakeFiles/Day2.dir/day2/febonanci.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day2/febonanci.c || cmake_object_order_depends_target_Day2
   DEP_FILE = CMakeFiles/Day2.dir/day2/febonanci.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3"
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
   OBJECT_DIR = CMakeFiles/Day2.dir
   OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day2
 
 build CMakeFiles/Day2.dir/day2/second_biggest.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day2/second_biggest.c || cmake_object_order_depends_target_Day2
   DEP_FILE = CMakeFiles/Day2.dir/day2/second_biggest.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3"
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
   OBJECT_DIR = CMakeFiles/Day2.dir
   OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day2
 
 build CMakeFiles/Day2.dir/day2/day_task.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day2/day_task.c || cmake_object_order_depends_target_Day2
   DEP_FILE = CMakeFiles/Day2.dir/day2/day_task.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3"
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
   OBJECT_DIR = CMakeFiles/Day2.dir
   OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day2
 
 build CMakeFiles/Day2.dir/day3/palindrome.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day3/palindrome.c || cmake_object_order_depends_target_Day2
   DEP_FILE = CMakeFiles/Day2.dir/day3/palindrome.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3"
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
   OBJECT_DIR = CMakeFiles/Day2.dir
   OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day3
 
 build CMakeFiles/Day2.dir/test/test.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/test/test.c || cmake_object_order_depends_target_Day2
   DEP_FILE = CMakeFiles/Day2.dir/test/test.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3"
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
   OBJECT_DIR = CMakeFiles/Day2.dir
   OBJECT_FILE_DIR = CMakeFiles/Day2.dir/test
+
+build CMakeFiles/Day2.dir/day3/shift_arr.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day3/shift_arr.c || cmake_object_order_depends_target_Day2
+  DEP_FILE = CMakeFiles/Day2.dir/day3/shift_arr.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
+  OBJECT_DIR = CMakeFiles/Day2.dir
+  OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day3
+
+build CMakeFiles/Day2.dir/day3/largest_water_tank.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day3/largest_water_tank.c || cmake_object_order_depends_target_Day2
+  DEP_FILE = CMakeFiles/Day2.dir/day3/largest_water_tank.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
+  OBJECT_DIR = CMakeFiles/Day2.dir
+  OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day3
+
+build CMakeFiles/Day2.dir/day4/calculator.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day4/calculator.c || cmake_object_order_depends_target_Day2
+  DEP_FILE = CMakeFiles/Day2.dir/day4/calculator.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
+  OBJECT_DIR = CMakeFiles/Day2.dir
+  OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day4
+
+build CMakeFiles/Day2.dir/day4/stack.c.o: C_COMPILER__Day2_unscanned_Debug /media/hossam/Barracuda1/Data/Courses/EME/1.$ C_Programming/Day2/day4/stack.c || cmake_object_order_depends_target_Day2
+  DEP_FILE = CMakeFiles/Day2.dir/day4/stack.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/." -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day2" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day3" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/day4" -I"/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/test"
+  OBJECT_DIR = CMakeFiles/Day2.dir
+  OBJECT_FILE_DIR = CMakeFiles/Day2.dir/day4
 
 
 # =============================================================================
@@ -106,7 +134,7 @@ build CMakeFiles/Day2.dir/test/test.c.o: C_COMPILER__Day2_unscanned_Debug /media
 #############################################
 # Link the executable Day2
 
-build Day2: C_EXECUTABLE_LINKER__Day2_Debug CMakeFiles/Day2.dir/main.c.o CMakeFiles/Day2.dir/day2/swap_two_numbers.c.o CMakeFiles/Day2.dir/day2/febonanci.c.o CMakeFiles/Day2.dir/day2/second_biggest.c.o CMakeFiles/Day2.dir/day2/day_task.c.o CMakeFiles/Day2.dir/day3/palindrome.c.o CMakeFiles/Day2.dir/test/test.c.o
+build Day2: C_EXECUTABLE_LINKER__Day2_Debug CMakeFiles/Day2.dir/main.c.o CMakeFiles/Day2.dir/day2/swap_two_numbers.c.o CMakeFiles/Day2.dir/day2/febonanci.c.o CMakeFiles/Day2.dir/day2/second_biggest.c.o CMakeFiles/Day2.dir/day2/day_task.c.o CMakeFiles/Day2.dir/day3/palindrome.c.o CMakeFiles/Day2.dir/test/test.c.o CMakeFiles/Day2.dir/day3/shift_arr.c.o CMakeFiles/Day2.dir/day3/largest_water_tank.c.o CMakeFiles/Day2.dir/day4/calculator.c.o CMakeFiles/Day2.dir/day4/stack.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Day2.dir
   POST_BUILD = :

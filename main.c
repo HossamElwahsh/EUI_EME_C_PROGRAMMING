@@ -15,6 +15,9 @@
 #include "day_task.h"
 #include "test/test.h"
 #include "palindrome.h"
+#include "shift_arr.h"
+#include "calculator.h"
+#include "stack.h"
 
 void swapTest()
 {
@@ -78,10 +81,148 @@ void testPalindrome()
     is_palindrome(arr, n);
 }
 
+void testShiftArray()
+{
+    int arr[] = {1,2,3,4,5,6};
+    int n = 6;
+
+    shift_arr(arr, n, 3);
+}
+
+void getInput(boolean two_numbers, double * x, double * y)
+{
+    if(two_numbers)
+    {
+        printf("Enter operands separated with space (x y):\n\t");
+        scanf("%lf %lf", x, y);
+    }
+    else
+    {
+        printf("Enter operand:\n\t");
+        scanf("%lf", x);
+    }
+}
+
+void testCalculator()
+{
+    char operator = ' ';
+    double x,y, result;
+    en_calc_error_t en_l_calc_error = CALC_OK;
+
+    while(TRUE)
+    {
+        /* reset error flag */
+        en_l_calc_error = CALC_OK;
+
+        printf("\n------------\n\nChoose operation (+,-,*,/,^,!):\t");
+        scanf("\n%c", &operator);
+
+        /* Process user input */
+        switch (operator)
+        {
+            case '+':
+            {
+                /* get user input */
+                getInput(TRUE, &x, &y);
+                en_l_calc_error = CALC(CALC_ADD, x, y, &result);
+                break;
+            }
+            case '-':
+            {
+                /* get user input */
+                getInput(TRUE, &x, &y);
+                en_l_calc_error = CALC(CALC_SUB, x, y, &result);
+                break;
+            }
+            case '*':
+            {
+                /* get user input */
+                getInput(TRUE, &x, &y);
+                en_l_calc_error = CALC(CALC_MUL,x, y, &result);
+                break;
+            }
+            case '/':
+            {
+                /* get user input */
+                getInput(TRUE, &x, &y);
+                en_l_calc_error = CALC(CALC_DIV, x, y, &dec_result);
+                break;
+            }
+            case '^':
+            {
+                /* get user input */
+                getInput(TRUE, &x, &y);
+                en_l_calc_error = CALC(CALC_POW, x, y, &dec_result);
+                break;
+            }
+            case '!':
+            {
+                /* get user input */
+                getInput(FALSE, &x, NULL_PTR);
+                en_l_calc_error = factorial(x, &result);
+                break;
+            }
+            default:
+            {
+                /* Wrong user input */
+                printf("\nWrong input! \n\n");
+                continue;
+            }
+        }
+
+        /* Print result */
+        if(CALC_ERROR == en_l_calc_error)
+        {
+            printf("\nResult:\n\tError occurred.\n");
+        }
+        else
+        {
+            printf("\nResult:\n\t%lf\n", result);
+        }
+
+        fflush(stdin);
+
+    } /* end while */
+}
+
+void test_stack()
+{
+    st_stack_t * my_stack = NULL_PTR;
+    int number = 0;
+
+    my_stack = stack_create(STACK_SIZE);
+
+//    stack_print(my_stack);
+    stack_pop(my_stack, &number);
+    stack_push(my_stack, 1);
+    stack_push(my_stack, 2);
+    stack_push(my_stack, 3);
+    stack_pop(my_stack, &number);
+
+    stack_push(my_stack, 3);
+    stack_push(my_stack, 4);
+    stack_push(my_stack, 5);
+    stack_push(my_stack, 6);
+    stack_print(my_stack);
+//    stack_print(my_stack);
+    stack_pop(my_stack, &number);
+
+    /* free pointer */
+    free(my_stack);
+}
+
 int main(void)
 {
 //    testPalindrome();
-    auto_test_palindrome();
+//    auto_test_palindrome();
+//    auto_test_palindrome_digits();
+//    auto_test_shift_arr();
+//    auto_test_largest_area();
+//    testCalculator();
+//    testCalculator();
+//    test();
+
+    test_stack();
 
 //    testMaxProfit();
     //    secondBiggestTest();
