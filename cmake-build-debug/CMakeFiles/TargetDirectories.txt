@@ -1,3 +1,3 @@
-/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/cmake-build-debug/CMakeFiles/Day2.dir
-/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/media/hossam/Barracuda1/Data/Courses/EME/1. C_Programming/Day2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Data/Courses/EME/1. C_Programming/Day2/cmake-build-debug/CMakeFiles/Day2.dir
+D:/Data/Courses/EME/1. C_Programming/Day2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Data/Courses/EME/1. C_Programming/Day2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

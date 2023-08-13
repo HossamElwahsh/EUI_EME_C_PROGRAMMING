@@ -7,6 +7,9 @@ include_directories(.)
 include_directories(day2)
 include_directories(day3)
 include_directories(day4)
+include_directories(day5_bus_reservation_project)
+include_directories(day5_bus_reservation_project/helpers)
+include_directories(day5_bus_reservation_project/helpers/circular_queue)
 include_directories(test)
 
 add_executable(Day2
@@ -25,4 +28,16 @@ add_executable(Day2
         day4/calculator.c
         day4/calculator.h
         day4/stack.c
-        day4/stack.h)
+        day4/stack.h
+        day5_bus_reservation_project/ticket.c
+        day5_bus_reservation_project/ticket.h
+        day5_bus_reservation_project/bus_reserve_app.c
+        day5_bus_reservation_project/bus_reserve_app.h
+        day5_bus_reservation_project/bus.c
+        day5_bus_reservation_project/bus.h
+        day5_bus_reservation_project/helpers/circular_queue/cqueue_program.c
+        day5_bus_reservation_project/user.c
+        day5_bus_reservation_project/user.h
+        day5_bus_reservation_project/helpers/test.c
+        day5_bus_reservation_project/helpers/test.h
+)

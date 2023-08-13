@@ -18,6 +18,7 @@
 #include "shift_arr.h"
 #include "calculator.h"
 #include "stack.h"
+#include "bus_reserve_app.h"
 
 void swapTest()
 {
@@ -211,6 +212,46 @@ void test_stack()
     free(my_stack);
 }
 
+void testBuses()
+{
+    /* init users */
+    init_users();
+
+    st_bus_data_t st_bus_data =
+            {
+                    20,
+                    "",
+                    "Alexandria",
+                    "Cairo",
+                    "12/8/2023 1:00 PM",
+                    3*60
+            };
+
+    bus_show_buses();
+
+    bus_add(st_bus_data, NULL_PTR);
+
+    st_bus_data.depart_station = "Cairo";
+    st_bus_data.arrive_station = "Alexandria";
+    st_bus_data.depart_datetime = "12/8/2023 4:00 PM";
+
+    bus_add(st_bus_data, NULL_PTR);
+
+    bus_show_buses();
+
+//    bus_delete(1);
+
+//    bus_add(st_bus_data, NULL_PTR);
+
+//    bus_show_buses();
+
+    en_ticket_status_t en_ticket_status = book_ticket(1, 1, 2, NULL_PTR);
+    en_ticket_status = book_ticket(1, 1, 2, NULL_PTR);
+    en_ticket_status = book_ticket(1, 1, 2, NULL_PTR);
+
+    boolean test = TRUE;
+}
+
 int main(void)
 {
 //    testPalindrome();
@@ -222,7 +263,13 @@ int main(void)
 //    testCalculator();
 //    test();
 
-    test_stack();
+//testBuses();
+
+//    bus_program_start();
+
+    test_bus_all();
+
+//    test_stack();
 
 //    testMaxProfit();
     //    secondBiggestTest();
