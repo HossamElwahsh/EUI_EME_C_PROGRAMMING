@@ -119,8 +119,8 @@ int main(void)
 
     /* Main Programs
      * uncomment to use */
-    calculator_program();
-//    bus_reservation_program_start();
+    //calculator_program();
+    bus_reservation_program_start();
 
 
     return 0;

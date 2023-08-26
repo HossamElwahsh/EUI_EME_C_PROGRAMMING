@@ -2,7 +2,7 @@
 ## Hossam Elwahsh - CLASS 3 - SEITECH
 ### C Programming
 
-> This repository contains multiple tasks and projects completed during eme program sessions
+> This repository contains multiple tasks and projects completed during EME program in EUI.
 
 #### Projects
 - **Bus Reservation System**

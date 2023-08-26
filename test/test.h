@@ -12,7 +12,6 @@
 #define TEST_DIR "../test/TestCases/"
 #define CONCAT(STR1, STR2) STR1 STR2
 
- /** Test function for @see ../Card/card.c:getCardPan() */
 void auto_test_palindrome(void);
 void auto_test_palindrome_digits(void);
 void auto_test_shift_arr();
