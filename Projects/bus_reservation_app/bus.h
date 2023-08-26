@@ -5,8 +5,7 @@
 
 #define MAX_BUSES 10
 #define GET_BUS_INDEX_FROM_ID(x) (x-1)
-#define DEBUG TRUE
-
+#define DEBUG FALSE
 typedef struct
 {
     int max_bus_seating;

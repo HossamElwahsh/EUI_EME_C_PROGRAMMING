@@ -5,8 +5,7 @@
 #ifndef DAY2_TICKET_H
 #define DAY2_TICKET_H
 
-#define DEBUG TRUE
-
+#define DEBUG FALSE
 #define GET_TICKET_INDEX_FROM_ID(x) (x-1)
 #define GET_TICKET_ID_FROM_INDEX(x) (x+1)
 

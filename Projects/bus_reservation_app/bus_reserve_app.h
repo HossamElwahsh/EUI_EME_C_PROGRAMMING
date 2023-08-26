@@ -9,6 +9,6 @@
 #include "bus.h"
 #include "user.h"
 
-void bus_program_start(void);
+void bus_reservation_program_start(void);
 
 #endif //DAY2_BUS_RESERVE_APP_H

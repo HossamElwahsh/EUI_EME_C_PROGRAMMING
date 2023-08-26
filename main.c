@@ -20,7 +20,7 @@
 #include "stack.h"
 #include "bus_reserve_app.h"
 
-void swapTest()
+void test_swap_two_numbers()
 {
     int a,b;
     a = 5;
@@ -34,7 +34,7 @@ void swapTest()
 
 }
 
-void secondBiggestTest()
+void test_second_biggest_finder()
 {
     int second_biggest = -1;
     int n = 8;
@@ -55,7 +55,7 @@ void secondBiggestTest()
     }
 }
 
-void testMaxProfit()
+void test_max_profit_finder()
 {
     int max_profit = 0;
     int n = 6;
@@ -74,7 +74,7 @@ void testMaxProfit()
     printf("Max profit: %d\n", max_profit);
 }
 
-void testPalindrome()
+void test_is_palindrome()
 {
     int arr[] = {1,2,2,1};
     int n = 4;
@@ -82,7 +82,7 @@ void testPalindrome()
     is_palindrome(arr, n);
 }
 
-void testShiftArray()
+void test_array_shifter()
 {
     int arr[] = {1,2,3,4,5,6};
     int n = 6;
@@ -144,26 +144,22 @@ void test_stack()
 
 int main(void)
 {
-    calculator_program();
-//    testPalindrome();
-//    auto_test_palindrome();
-//    auto_test_palindrome_digits();
-//    auto_test_shift_arr();
-//    auto_test_largest_area();
-//    calculator_program();
-//    calculator_program();
-//    test();
-
-//test_buses();
-
-//    bus_program_start();
-
-//    test_bus_all();
-
+    /* Some test functions for tasks/programs
+     * uncomment to test
+     * */
+//    test_is_palindrome();
+//    test_max_profit_finder();
+//    test_array_shifter();
+//    test_second_biggest_finder();
+//    test_swap_two_numbers();
 //    test_stack();
 
-//    testMaxProfit();
-    //    secondBiggestTest();
+    /* Main Programs
+     * uncomment to use */
+//    calculator_program();
+    bus_reservation_program_start();
+
+
     return 0;
 }
 

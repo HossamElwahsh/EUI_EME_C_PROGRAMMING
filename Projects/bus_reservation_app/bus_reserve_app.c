@@ -29,7 +29,7 @@ static void cancel_existing_ticket(int user_id)
     cancel_ticket(user_id, ticket_id);
 }
 
-void bus_program_start(void)
+void bus_reservation_program_start(void)
 {
     /* init users */
     init_users();
@@ -79,21 +79,26 @@ void bus_program_start(void)
         action = NOT_INIT;
 
         /* Prompt for action */
-        printf("\nSelect Action (1,2,3):\n\t1. Reserve new ticket\n\t2. Cancel existing ticket\n\t3. Logout\nSelection:\t");
+        printf("\nSelect Action (1,2,3,4):\n\t1. Show Available Trips\n\t2. Reserve new ticket\n\t3. Cancel existing ticket\n\t4. Logout\nSelection:\t");
         scanf("%d", &action);
 
         switch (action) {
-            case 1: /* reserve ticket */
+            case 1: /* show available trips */
+            {
+                bus_show_buses();
+                break;
+            }
+            case 2: /* reserve ticket */
             {
                 reserve_new_ticket(current_user_id);
                 break;
             }
-            case 2: /* cancel ticket */
+            case 3: /* cancel ticket */
             {
                 cancel_existing_ticket(current_user_id);
                 break;
             }
-            case 3: /* logout */
+            case 4: /* logout */
             {
                 printf("\n\n[INFO] Logging out...\n\n\n");
                 fflush(stdin);
