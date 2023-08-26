@@ -23,17 +23,23 @@ typedef enum
     CALC_TOTAL
 }en_calc_types_t;
 
-en_calc_error_t add         (double x, double y, double * result);
-en_calc_error_t sub         (double x, double y, double * result);
-en_calc_error_t multiply    (double x, double y, double * result);
-en_calc_error_t divide      (double x, double y, double * result);
-en_calc_error_t power       (double x, double y, double * result);
-en_calc_error_t factorial   (double x, double * result);
+static en_calc_error_t add         (double f64_a_x, double f64_a_y, double * ptr_f64_a_result);
+static en_calc_error_t sub         (double f64_a_x, double f64_a_y, double * ptr_f64_a_result);
+static en_calc_error_t multiply    (double f64_a_x, double f64_a_y, double * ptr_f64_a_result);
+static en_calc_error_t divide      (double f64_a_x, double f64_a_y, double * ptr_f64_a_result);
+static en_calc_error_t power       (double f64_a_x, double f64_a_y, double * ptr_f64_a_result);
+static en_calc_error_t factorial   (double f64_a_number, double * ptr_f64_a_result);
 
-typedef en_calc_error_t (*calc_fun)  (double,   double,      double *   ); // function pointer type for addition
+/* function pointer type for calculator APIs */
+typedef en_calc_error_t (*calc_fun)  (double,   double,      double *   );
 
+/* Helping macro to use calculator APIs */
 #define CALC(en_calc_types_t,x,y,res) (* (calc_fun)calculator_arr[en_calc_types_t])(x, y, &result)
 
+/* calculator functions array */
 extern calc_fun calculator_arr[];
+
+/* Calculator main program */
+void calculator_program();
 
 #endif //DAY2_CALCULATOR_H

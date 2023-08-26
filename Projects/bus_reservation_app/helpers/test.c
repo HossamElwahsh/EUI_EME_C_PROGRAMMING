@@ -1,6 +1,5 @@
 #include "test.h"
 #include "bus_reserve_app.h"
-#include "std.h"
 
 void init_bus_tests()
 {
@@ -104,6 +103,7 @@ void test_user_retrieve_user()
 
 }
 
+/* Test function to login and user retrieval */
 void test_bus_all()
 {
     test_bus_login();

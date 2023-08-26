@@ -433,4 +433,7 @@ void auto_test_largest_area(void)
 void testAll()
 {
     auto_test_palindrome();
+    auto_test_shift_arr();
+    auto_test_largest_area();
+    auto_test_palindrome_digits();
 }

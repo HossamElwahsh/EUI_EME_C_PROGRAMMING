@@ -1,5 +1,5 @@
 //
-// Created by hossam on 8/10/23.
+// Created by Hossam Elwahsh on 8/10/23.
 //
 
 #include "palindrome.h"

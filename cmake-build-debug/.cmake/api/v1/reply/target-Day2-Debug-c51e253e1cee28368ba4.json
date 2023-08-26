@@ -110,15 +110,15 @@
 				},
 				{
 					"backtrace" : 6,
-					"path" : "D:/Data/Courses/EME/1. C_Programming/Day2/day5_bus_reservation_project"
+					"path" : "D:/Data/Courses/EME/1. C_Programming/Day2/Projects/bus_reservation_app"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "D:/Data/Courses/EME/1. C_Programming/Day2/day5_bus_reservation_project/helpers"
+					"path" : "D:/Data/Courses/EME/1. C_Programming/Day2/Projects/bus_reservation_app/helpers"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "D:/Data/Courses/EME/1. C_Programming/Day2/day5_bus_reservation_project/helpers/circular_queue"
+					"path" : "D:/Data/Courses/EME/1. C_Programming/Day2/Projects/bus_reservation_app/helpers/circular_queue"
 				},
 				{
 					"backtrace" : 9,
@@ -151,8 +151,7 @@
 				18,
 				20,
 				22,
-				23,
-				25
+				24
 			]
 		}
 	],
@@ -204,8 +203,7 @@
 				18,
 				20,
 				22,
-				23,
-				25
+				24
 			]
 		},
 		{
@@ -220,8 +218,8 @@
 				17,
 				19,
 				21,
-				24,
-				26
+				23,
+				25
 			]
 		}
 	],
@@ -259,7 +257,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day2/day_task.c",
+			"path" : "day2/max_profit_finder.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -321,62 +319,56 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day5_bus_reservation_project/ticket.c",
+			"path" : "Projects/bus_reservation_app/ticket.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "day5_bus_reservation_project/ticket.h",
+			"path" : "Projects/bus_reservation_app/ticket.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day5_bus_reservation_project/bus_reserve_app.c",
+			"path" : "Projects/bus_reservation_app/bus_reserve_app.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "day5_bus_reservation_project/bus_reserve_app.h",
+			"path" : "Projects/bus_reservation_app/bus_reserve_app.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day5_bus_reservation_project/bus.c",
+			"path" : "Projects/bus_reservation_app/bus.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "day5_bus_reservation_project/bus.h",
+			"path" : "Projects/bus_reservation_app/bus.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day5_bus_reservation_project/helpers/circular_queue/cqueue_program.c",
+			"path" : "Projects/bus_reservation_app/user.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "day5_bus_reservation_project/user.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "day5_bus_reservation_project/user.h",
+			"path" : "Projects/bus_reservation_app/user.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "day5_bus_reservation_project/helpers/test.c",
+			"path" : "Projects/bus_reservation_app/helpers/test.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "day5_bus_reservation_project/helpers/test.h",
+			"path" : "Projects/bus_reservation_app/helpers/test.h",
 			"sourceGroupIndex" : 1
 		}
 	],

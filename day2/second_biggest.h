@@ -1,5 +1,5 @@
 //
-// Created by hacke on 8/6/2023.
+// Created by Hossam Elwahsh on 8/6/2023.
 //
 
 #ifndef DAY2_SECOND_BIGGEST_H
@@ -14,9 +14,14 @@
 #define MIN_ARR_COUNT   1
 #define NULL            0
 #define NULL_PTR        ((void *) NULL)
+
+/* If true,
+ *  finds the second biggest number in an array without sorting the array first with an optimized algorithm
+ * */
 #define OPTIMIZED_FIND  TRUE
 
 /* Config */
+/* Sorting Option */
 #define SORT_ASC        FALSE
 
 /* Typdefs */

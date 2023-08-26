@@ -1,5 +1,5 @@
 #include "bus.h"
-#include "cqueue_interface.h"
+#include "std.h"
 
 /* Private vars */
 static st_bus_t st_buses[MAX_BUSES];

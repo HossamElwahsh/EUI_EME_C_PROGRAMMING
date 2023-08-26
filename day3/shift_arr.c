@@ -1,7 +1,8 @@
 //
-// Created by hossam on 8/10/23.
+// Created by Hossam Elwahsh on 10/8/23.
 //
 
+#include <stdio.h>
 #include "shift_arr.h"
 
 void shift_arr(int * arr, int n, int k)

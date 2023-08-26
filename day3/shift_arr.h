@@ -11,7 +11,11 @@
 
 /* Takes Modulus of x % y, and saves result in y */
 #define MOD_SAVE(x,y) x %= y
+
+/* Finds half of a number */
 #define HALF_OF(x) (x/2)
+
+#define MIN_ARR_SIZE 1
 
 void shift_arr(int * arr, int n, int k);
 

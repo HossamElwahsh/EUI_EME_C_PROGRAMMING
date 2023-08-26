@@ -1,5 +1,5 @@
 //
-// Created by hacke on 8/6/2023.
+// Created by Hossam Elwahsh on 8/6/2023.
 //
 
 #include "swap_two_numbers.h"
@@ -46,6 +46,11 @@ void swap3(int * intptr_a_num1, int * intptr_a_num2)
 
 }
 
+/**
+ * @brief               :   Takes two numbers and swaps them together using multiplication & division
+ * @param intptr_a_num1 :   Ptr to Number 1
+ * @param intptr_a_num2 :   Ptr to Number 2
+ */
 void swap4(int * intptr_a_num1, int * intptr_a_num2)
 {
     // a = 5, b = 8;

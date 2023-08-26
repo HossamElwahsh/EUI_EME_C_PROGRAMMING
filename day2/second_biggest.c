@@ -1,5 +1,5 @@
 //
-// Created by hacke on 8/6/2023.
+// Created by Hossam Elwahsh on 8/6/2023.
 //
 
 #include "second_biggest.h"
@@ -26,7 +26,6 @@ int find_second_biggest(int * int_arr, int n)
 #endif
 }
 
-// todo return by pointer
 static int find_second_biggest_with_sort(int * int_arr, int n)
 {
     int int_l_second_biggest_retval = -1;

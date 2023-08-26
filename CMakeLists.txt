@@ -7,18 +7,19 @@ include_directories(.)
 include_directories(day2)
 include_directories(day3)
 include_directories(day4)
-include_directories(day5_bus_reservation_project)
-include_directories(day5_bus_reservation_project/helpers)
-include_directories(day5_bus_reservation_project/helpers/circular_queue)
+include_directories(Projects/bus_reservation_app)
+include_directories(Projects/bus_reservation_app/helpers)
+include_directories(Projects/bus_reservation_app/helpers/circular_queue)
 include_directories(test)
 
 add_executable(Day2
         main.c
         std.h
 
-        day2/swap_two_numbers.c day2/febonanci.c
+        day2/swap_two_numbers.c
+        day2/febonanci.c
         day2/second_biggest.c
-        day2/day_task.c
+        day2/max_profit_finder.c
         day3/palindrome.c
         test/test.c
         test/test.h
@@ -29,15 +30,14 @@ add_executable(Day2
         day4/calculator.h
         day4/stack.c
         day4/stack.h
-        day5_bus_reservation_project/ticket.c
-        day5_bus_reservation_project/ticket.h
-        day5_bus_reservation_project/bus_reserve_app.c
-        day5_bus_reservation_project/bus_reserve_app.h
-        day5_bus_reservation_project/bus.c
-        day5_bus_reservation_project/bus.h
-        day5_bus_reservation_project/helpers/circular_queue/cqueue_program.c
-        day5_bus_reservation_project/user.c
-        day5_bus_reservation_project/user.h
-        day5_bus_reservation_project/helpers/test.c
-        day5_bus_reservation_project/helpers/test.h
+        Projects/bus_reservation_app/ticket.c
+        Projects/bus_reservation_app/ticket.h
+        Projects/bus_reservation_app/bus_reserve_app.c
+        Projects/bus_reservation_app/bus_reserve_app.h
+        Projects/bus_reservation_app/bus.c
+        Projects/bus_reservation_app/bus.h
+        Projects/bus_reservation_app/user.c
+        Projects/bus_reservation_app/user.h
+        Projects/bus_reservation_app/helpers/test.c
+        Projects/bus_reservation_app/helpers/test.h
 )
