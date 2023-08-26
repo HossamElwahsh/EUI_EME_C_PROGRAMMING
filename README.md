@@ -32,6 +32,8 @@
 > - In [main.c](main.c) file, uncomment required program to run
 > - Build and run
 
+### Video 👉 [showcase_video.mp4](Docs/showcase_video.mp4)
+
 ### Testing
 > - Multiple auto-testing APIs are also available in main.c to test every task in this repository
 > - You may also add extra test cases to the required module (test cases .csv) file found inside the directory [test/Testcases](test/TestCases)
