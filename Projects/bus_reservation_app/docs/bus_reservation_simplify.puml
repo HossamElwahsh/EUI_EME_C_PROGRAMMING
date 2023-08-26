@@ -1,0 +1,165 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+title Bus Reservation System
+
+class BUS
+
+class bus_reserve_app
+{
+    - bool logged_in
+
+    + bus_program_start\t\t(void)
+    - reserve_new_ticket\t\t(cus_id)
+    - cancel_existing_ticket\t(cus_id)
+}
+
+bus_reserve_app --> Ticket
+
+class USER
+{
+    - ST_USER users[]
+    - int users_count
+
+    + void\t init_users(void);
+    + user_status_t\t login(username,\t password);
+    + en_user_status_t\t retrieve_user(int user_id, st_user_t ** ptr_ptr_st_user);
+    - user_status_t\t find_user(username, * user_id);
+}
+
+struct ST_USER
+{
+    + id \t\t\t//   index
+    + username
+    + password
+    + ticket reservations[]
+    + reserved_tickets_count
+}
+
+enum en_user_status_t
+{
+    USER_OK
+    USER_INVALID_ARGS
+    USER_ERROR
+    USER_TOTAL
+}
+
+
+class BUS {
+    - st_bus_t st_buses[]
+    - int buses_count
+
+    + void\t bus_init();
+    + en_bus_status_t\t bus_add             (st_bus_data_t st_a_bus_data,   int * intptr_a_bus_id);
+    + en_bus_status_t\t bus_delete          (int int_a_bus_id);
+    + en_bus_status_t\t bus_reserve_seats   (int bus_id,                    int seats_count);
+    + en_bus_status_t\t bus_free_seats      (int bus_id, int seats_count)
+    + en_bus_status_t\t bus_check_id        (int bus_id,                    st_bus_t * ptr_st_bus);
+    + en_bus_status_t\t bus_show_buses      (void);
+}
+
+struct bus_data
+{
+    + max_seating
+    + line_desc
+    + depart_station
+    + arrive_station
+    + depart_datetime
+    + trip_duration_min
+}
+
+enum en_bus_status_t
+{
+    BUS_OK
+    BUS_NO_BUSES
+    BUS_NO_SPACE
+    BUS_ERROR
+    BUS_INVALID_ARGS
+    BUS_TOTAL
+}
+
+class Ticket
+{
+    + ticket_id
+    + customer_id
+    + bus_id
+    + ticket_seats
+    + en_ticket_status_t \tbook_ticket\t(cus_id,\t bus_id,\t ticket_seats,\t * ticket_id)
+    '+ en_ticket_status_t \tmodify_ticket\t(* ticket_id,\t bus_id,\t seats,\t luggage)
+    + en_ticket_status_t \tcancel_ticket\t(cus_id, ticket_id)
+}
+
+struct ST_TICKET
+{
+    int ticket_id
+    int customer_id
+    int bus_id
+    int ticket_seats
+}
+
+enum en_ticket_status_t
+{
+    TICKET_OK
+    TICKET_ERROR
+    TICKET_TOO_MANY_RESERVATIONS
+    TICKET_STATUS_TOTAL
+}
+
+Ticket --> BUS
+Ticket --> USER
+BUS --> bus_data
+BUS --> en_bus_status_t
+Ticket -> ST_TICKET
+Ticket -left-> en_ticket_status_t
+USER --> ST_USER
+USER --> en_user_status_t
+
+note as N1
+  = <b><color:royalBlue>Requirements:</color>
+  = Login
+      1. Upon system power on, request user to enter his username and password
+
+      2. Only correct username and password can login,\n\t
+            **otherwise** show error message: "Incorrect username/password", re-prompt username and password input
+
+  = Login Success
+    3. User should be asked to select an action upon logging in
+        **Available Actions:**
+            - Reserve New Ticket
+            - Cancel Existing Ticket
+            - Logout
+
+    4. On reserving new ticket, user should be presented with available buses as a list of:
+        - Bus ID __(to be selected by user)__
+        - Line data
+        - Available seating
+
+    5. <color:royalBlue>When showing buses, only present buses with available seating,
+        **if none** show //"Sorry, no buses available"//
+
+    6. User can only select a bus that exists,
+        **otherwise** show //"Incorrect bus ID"//
+
+    7. Upon selecting a bus to reserve, system should present available seating number then
+            user should be asked to enter how many seats to reserve
+
+    8. User can only book (n) seating iff available in the selected bus,
+        **otherwise** show __//"Sorry, bus is fully booked"//__ or //"only (n) seats are available"//
+
+    9. User should be presented with Ticket/Reservation ID upon successful reservation
+
+    10. User can only book a maximum of 2 tickets,
+        **otherwise** show //"Sorry, our policy only allows 2 tickets per user."//
+
+    11.  On cancelling a ticket, ask user for ticket id,
+        **also present a note** stating that cancelling will cancel all seats included
+
+    12. On cancelling a ticket, user can only cancel his own and existing tickets,
+        **otherwise** show //"Ticket not found"//
+
+    13. Upon successful cancellation, show "Ticket (id) cancelled successfully"
+
+    14. Upon finishing each action (reserve/cancel) re-ask user for his next action
+
+end note
+@enduml

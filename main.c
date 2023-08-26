@@ -1,11 +1,7 @@
 /**
- * @brief   :   Swap two numbers with 4 different ways,
- *              print feb series,
- *              print second biggest number in array.
- *
  * @author  :   Hossam Elwahsh
  * @date    :   8-6-2023
- * @class   :   EME - C Programming - Day 2
+ * @class   :   EME - C Programming
  */
 
 #include "stdio.h"
@@ -16,7 +12,7 @@
 #include "test/test.h"
 #include "palindrome.h"
 #include "shift_arr.h"
-#include "calculator.h"
+#include "Projects/console_calculator/calculator.h"
 #include "stack.h"
 #include "bus_reserve_app.h"
 
@@ -76,18 +72,13 @@ void test_max_profit_finder()
 
 void test_is_palindrome()
 {
-    int arr[] = {1,2,2,1};
-    int n = 4;
-
-    is_palindrome(arr, n);
+    auto_test_palindrome();
+    auto_test_palindrome_digits();
 }
 
 void test_array_shifter()
 {
-    int arr[] = {1,2,3,4,5,6};
-    int n = 6;
-
-    shift_arr(arr, n, 3);
+    auto_test_shift_arr();
 }
 
 void test_stack()
@@ -114,34 +105,6 @@ void test_stack()
     free(my_stack);
 }
 
-/*void test_buses()
-{
-    *//* init users *//*
-    init_users();
-
-    st_bus_data_t st_bus_data =
-            {
-                    20,
-                    "",
-                    "Alexandria",
-                    "Cairo",
-                    "12/8/2023 1:00 PM",
-                    3*60
-            };
-
-    bus_show_buses();
-
-    bus_add(st_bus_data, NULL_PTR);
-
-    st_bus_data.depart_station = "Cairo";
-    st_bus_data.arrive_station = "Alexandria";
-    st_bus_data.depart_datetime = "12/8/2023 4:00 PM";
-
-    bus_add(st_bus_data, NULL_PTR);
-
-    bus_show_buses();
-}*/
-
 int main(void)
 {
     /* Some test functions for tasks/programs
@@ -156,8 +119,8 @@ int main(void)
 
     /* Main Programs
      * uncomment to use */
-//    calculator_program();
-    bus_reservation_program_start();
+    calculator_program();
+//    bus_reservation_program_start();
 
 
     return 0;

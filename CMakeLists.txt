@@ -26,8 +26,8 @@ add_executable(Day2
         day3/shift_arr.h
         day3/shift_arr.c
         day3/largest_water_tank.c
-        day4/calculator.c
-        day4/calculator.h
+        Projects/console_calculator/calculator.c
+        Projects/console_calculator/calculator.h
         day4/stack.c
         day4/stack.h
         Projects/bus_reservation_app/ticket.c
